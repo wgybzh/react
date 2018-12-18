@@ -20,6 +20,7 @@ class App extends Component {
               <Route path="/index" component={Index} />
               <Route path="/homeSer" component={HomeSer}/>
               <Route path="/homeSort" component={HomeSort}/>
+              <Redirect path="/" to="/index/home" />
             </Switch>
           </main>
           

@@ -34,7 +34,7 @@ class App extends Component {
                 <NavLink to="/index/list">
                 <i className="fa fa-frown-o">  </i>
                 <span>
-                  淘特价
+                  品牌团
                 </span>
                 </NavLink>
               </li>
