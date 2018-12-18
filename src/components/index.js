@@ -2,7 +2,7 @@ import React, { Component ,Fragment} from 'react';
 import {HashRouter as Router,Route,Switch,NavLink,Redirect} from "react-router-dom";
 import Home from "../components/home/home";
 import List from "../components/list/list";
-import Order from '../components/order/order';
+import Car from '../components/order/car';
 import My from "../components/my/my";
 
 class App extends Component {
@@ -17,7 +17,7 @@ class App extends Component {
             <section>
               <Route path="/index/home" component={Home}/>
               <Route path="/index/list" component={List}/>
-              <Route path="/index/order" component={Order}/>
+              <Route path="/index/car" component={Car}/>
               <Route path="/index/my" component={My}/>
           </section>
           <div id="footer">
@@ -39,7 +39,7 @@ class App extends Component {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/index/order">
+                <NavLink to="/index/car">
                 <i className="fa fa-frown-o">  </i>
                 <span>
                   购物车

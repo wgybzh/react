@@ -1,10 +1,10 @@
 import React,{Component,Fragment} from "react";
 
-export default class Order extends Component{
+export default class Car extends Component{
    render(){
        return(
            <Fragment>
-               order
+               car
            </Fragment>
        )
    }
