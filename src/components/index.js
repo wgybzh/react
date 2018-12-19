@@ -2,7 +2,7 @@ import React, { Component} from 'react';
 import {HashRouter as Router,Route,NavLink,} from "react-router-dom";
 import Home from "../components/home/home";
 import List from "../components/list/list";
-import Car from '../components/order/car';
+import Car from '../components/car/car';
 import My from "../components/my/my";
 
 class App extends Component {
