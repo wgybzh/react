@@ -4,7 +4,6 @@ import Home from "../components/home/home";
 import List from "../components/list/list";
 import Car from '../components/car/car';
 import My from "../components/my/my";
-
 class App extends Component {
   render() {
     return (
@@ -18,6 +17,7 @@ class App extends Component {
               <Route path="/index/list" component={List}/>
               <Route path="/index/car" component={Car}/>
               <Route path="/index/my" component={My}/>
+              
           </section>
           <div id="footer">
             <ul>
