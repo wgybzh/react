@@ -1,13 +1,16 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React,{Component,Fragment} from "react";
 import {Link} from "react-router-dom"
-import "../../common/css/home.css"
+import "./css/style.css"
+import home_header_logo from "../../common/img/homeImg/home_header_img.png"
 export default class Home extends Component{
    render(){
        return(
            <Fragment>
-               <div className="homeHeader">
-                    <h1> <img src="../../common/img/logo.png"/> </h1>
+             
+                     <div id="img"> 
+                      <img  src={home_header_logo}/>
+                    </div>
                     <p className="homeSer">
                        <Link to="/homeSer" ></Link>
                     </p>
@@ -16,7 +19,22 @@ export default class Home extends Component{
                             <i className="fa fa-search"></i>
                         </a>
                     </div>
-               </div>
+                    <ul id="ddd">
+                       <li>1</li>
+                       <li>1</li>
+                       <li>1</li>
+                       <li>1</li>
+                       <li>1</li>
+                       <li>1</li>
+                       <li>1</li>
+                       <li>1</li>
+                       <li>1</li>
+                       <li>1</li>
+                       <li>1</li>
+                       <li>1</li>
+                       <li>1</li>
+                    </ul>
+               
            </Fragment>
        )
    }
