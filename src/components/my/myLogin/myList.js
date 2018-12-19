@@ -10,12 +10,7 @@ export default class MyList extends Component{
                     <li>
                         <i className="fa fa-shopping-cart"></i>
                     </li>
-                    <li>
-                        <i className="fa fa-shopping-cart"></i>
-                    </li>
-                    <li>
-                        <i className="fa fa-shopping-cart"></i>
-                    </li>
+                   
                </ul>
             </div>
         )
