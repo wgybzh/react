@@ -41,7 +41,7 @@ class App extends Component {
 
                
 
-                <NavLink to="/index/order">
+                <NavLink to="/index/car">
                 <i className="iconfont">&#xe602;</i>
 
                 <span>
