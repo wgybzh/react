@@ -1,5 +1,5 @@
 import React, { Component ,Fragment} from 'react';
-import {HashRouter as Router,Route,Switch,NavLink,Redirect} from "react-router-dom";
+import {HashRouter as Router,Route,Switch,Redirect} from "react-router-dom";
 
 import "./common/css/footer.css";
 import "./common/css/reset.css";
@@ -12,9 +12,7 @@ class App extends Component {
     return (
      <Router>
         <Fragment>
-          <header>
-
-          </header>
+         
           <main>
             <Switch>
               <Route path="/index" component={Index} />

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import "./common/js/flexble"
 import App from './App';
 
 

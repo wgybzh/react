@@ -1,5 +1,5 @@
-import React, { Component ,Fragment} from 'react';
-import {HashRouter as Router,Route,Switch,NavLink,Redirect} from "react-router-dom";
+import React, { Component} from 'react';
+import {HashRouter as Router,Route,NavLink,} from "react-router-dom";
 import Home from "../components/home/home";
 import List from "../components/list/list";
 import Car from '../components/order/car';
@@ -12,7 +12,6 @@ class App extends Component {
         <div className="box">
           <header>
           </header>
-           
               
             <section>
               <Route path="/index/home" component={Home}/>
@@ -24,7 +23,7 @@ class App extends Component {
             <ul>
               <li>
                 <NavLink to="/index/home">
-                <i className="fa fa-frown-o">  </i>
+                <i className="iconfont"> &#xe669;</i>
                 <span>
                   今日特卖
                 </span>
@@ -32,15 +31,19 @@ class App extends Component {
               </li>
               <li>
                 <NavLink to="/index/list">
-                <i className="fa fa-frown-o">  </i>
+                <i className="iconfont">&#xe629;</i>
                 <span>
                   品牌团
                 </span>
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/index/car">
-                <i className="fa fa-frown-o">  </i>
+
+               
+
+                <NavLink to="/index/order">
+                <i className="iconfont">&#xe602;</i>
+
                 <span>
                   购物车
                 </span>
@@ -48,7 +51,7 @@ class App extends Component {
               </li>
               <li>
                 <NavLink to="/index/my">
-                  <i className="fa fa-frown-o">  </i>
+                  <i className="iconfont">&#xe604;</i>
                   <span>
                     我的
                   </span>
