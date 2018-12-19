@@ -1,7 +1,7 @@
 
 main{
    
-    background: #ccf;
+  
     position: absolute;
     left: 0;
     top: 0;
@@ -16,6 +16,6 @@ section{
     left: 0;
     right: 0;
     bottom:.90rem;
-    background: #fcc;
+    
    
 }

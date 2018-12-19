@@ -1,10 +1,10 @@
 import React, { Component ,Fragment} from 'react';
 import {HashRouter as Router,Route,Switch,NavLink,Redirect} from "react-router-dom";
 import Home from "../components/home/home";
-import List from "../components/list/list";
-import Car from '../components/order/car';
-import My from "../components/my/my";
 
+import Car from '../components/car/car';
+import My from "../components/my/my";
+import "../common/js/flexble"
 class App extends Component {
   render() {
     return (
@@ -12,11 +12,9 @@ class App extends Component {
         <div className="box">
           <header>
           </header>
-           
-              
             <section>
               <Route path="/index/home" component={Home}/>
-              <Route path="/index/list" component={List}/>
+             
               <Route path="/index/car" component={Car}/>
               <Route path="/index/my" component={My}/>
           </section>
@@ -31,7 +29,7 @@ class App extends Component {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/index/list">
+                <NavLink to="/list">
                 <i className="fa fa-frown-o">  </i>
                 <span>
                   品牌团
