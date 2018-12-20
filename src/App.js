@@ -11,32 +11,31 @@ import HomeSort from "./components/home/homeCon/homeSort"
 
 import MyLogin from "./components/my/myLogin/myLogin"
 import MyRegister from "./components/my/myLogin/myRegister"
-
 import List from "./components/list/list"
+ import store from "./store"
+ import {Provider} from 'react-redux'
 
-class App extends Component {
+ export default class App extends Component {
   render() {
     return (
-     <Router>
-        <Fragment>
-         
-          <main>
-            <Switch>
-            <Route path="/list" component={List} />
-              <Route path="/index" component={Index} />
-              <Route path="/homeSer" component={HomeSer}/>
-              <Route path="/homeSort" component={HomeSort}/>
-              <Route path="/mylogin" component={MyLogin} />
-              <Route path="/myregister" component={MyRegister} />
-              <Redirect path="/" to="/index/home" />
-            </Switch>
-          </main>
-          
-        </Fragment>
-     </Router>
+      <Provider store = {store}>
+          <Router>
+                <main>
+                     <Switch>
+                            <Route path="/list" component={List} />
+                            <Route path="/index" component={Index} />
+                            <Route path="/homeSer" component={HomeSer}/>
+                            <Route path="/homeSort" component={HomeSort}/>
+                            <Route path="/mylogin" component={MyLogin} />
+                            <Route path="/myregister" component={MyRegister} />
+                            <Redirect path="/" to="/index/home" />
+                      </Switch>
+                </main>
+                
+          </Router>
+        </Provider>
     );
   }
  
 }
 
-export default App;

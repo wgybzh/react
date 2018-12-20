@@ -19,18 +19,44 @@
     top:.87rem;
     left:0;
     overflow: scroll;
-    background:pink
+    overflow-x: hidden;
 }
  
 #main #hotsell{
     color:red
 }
-
-#main #nav_wrap{
-    
-    overflow: hidden;
-    background-color: red;
-    width: 100%;
+#main .nav_wrap{
+    height: 1.52rem;
+   
+}
+.nav_wrap .swiper-wrapper{
+    width:7.5rem;
     height: 1.52rem
 }
+#main .nav_wrap>.swiper-wrapper>.swiper-slide{
+    width:17%;
+    height: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.nav_wrap>.swiper-wrapper>.nav_item{
+    width:1.66rem;
+    height:1.52rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column
     
+
+}
+.nav_wrap>.swiper-wrapper>.nav_item img{
+    
+    margin-bottom:.1rem;
+    width:1rem;
+    height:.7rem;
+    padding: 0.05rem .2rem;
+    margin: .2rem ;
+
+}
+
