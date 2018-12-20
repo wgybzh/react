@@ -8,7 +8,7 @@ export const dealList_action = () =>({
         fetchJsonp(url)
         .then(res=>res.json())
         .then((data)=>{
-            console.log(data)
+           resolve(data)
         })
     })
    
