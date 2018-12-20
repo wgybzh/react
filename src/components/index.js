@@ -1,5 +1,7 @@
 import React, { Component} from 'react';
 import {HashRouter as Router,Route,NavLink,} from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "../store";
 import Home from "../components/home/home";
 import List from "../components/list/list";
 import Car from '../components/car/car';
@@ -7,6 +9,7 @@ import My from "../components/my/my";
 class App extends Component {
   render() {
     return (
+      <Provider store={store}>
      <Router>
         <div className="box">
           <header>
@@ -61,6 +64,7 @@ class App extends Component {
           </div>
         </div>
      </Router>
+     </Provider>
     );
   }
  
