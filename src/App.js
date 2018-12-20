@@ -6,13 +6,15 @@ import "./common/css/reset.css";
 import "./common/css/section.css";
 
 import Index from "./components/index"
-import HomeSer from "./components/home/homeCon/homeSer"
-import HomeSort from "./components/home/homeCon/homeSort"
 
 import MyLogin from "./components/my/myLogin/myLogin"
+<<<<<<< HEAD
 
 import MyRegister from "./components/my/myRegister/myRegister"
 
+=======
+import MyRegister from "./components/my/myLogin/myRegister"
+>>>>>>> wsp
 import List from "./components/list/list"
  import store from "./store"
  import {Provider} from 'react-redux'
@@ -20,6 +22,7 @@ import List from "./components/list/list"
  export default class App extends Component {
   render() {
     return (
+<<<<<<< HEAD
       <Provider store = {store}>
           <Router>
                 <main>
@@ -36,6 +39,23 @@ import List from "./components/list/list"
                 
           </Router>
         </Provider>
+=======
+     <Router>
+        <Fragment>
+         
+          <main>
+            <Switch>
+            <Route path="/list" component={List} />
+              <Route path="/index" component={Index} />
+              <Route path="/mylogin" component={MyLogin} />
+              <Route path="/myregister" component={MyRegister} />
+              <Redirect path="/" to="/index/home" />
+            </Switch>
+          </main>
+          
+        </Fragment>
+     </Router>
+>>>>>>> wsp
     );
   }
  

@@ -1,23 +1,15 @@
-export const change_action = (val,type)=>({
-    type:"INPUT_CHANGE",
-    value:val,
-    style:type
-})
+import fetchJsonp from "fetch-jsonp"
 
-export const add_action = ()=>({
-    type:"ADD_ITEM"
-})
 
-export const modify_action = (val)=>({
-    type:"MODIFY_ITEM",
-    value:val
-})
-export const update_action = (val,type)=>({
-    type:"MODIFY_CHANGE",
-    value:val,
-    style:type
-})
-
-export const modify_success_action = ()=>({
-    type:"MODIFY_SUCCESS"
+export const dealList_action = () =>({
+    type:"DEALLIST",
+    payload:new Promise(resolve=>{
+        let url = "https://m.api.zhe800.com/list/deals/v2?user_id=&user_type=1&user_role=1&limit=20&offset=0"
+        fetchJsonp(url)
+        .then(res=>res.json())
+        .then((data)=>{
+           resolve(data)
+        })
+    })
+   
 })
