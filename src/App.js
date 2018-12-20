@@ -10,7 +10,7 @@ import HomeSer from "./components/home/homeCon/homeSer"
 import HomeSort from "./components/home/homeCon/homeSort"
 
 import MyLogin from "./components/my/myLogin/myLogin"
-import MyRegister from "./components/my/myLogin/myRegister"
+import MyRegister from "./components/my/myRegister/myRegister"
 
 import List from "./components/list/list"
 

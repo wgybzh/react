@@ -4,7 +4,7 @@ import MyList from "./myLogin/myList"
 export default class My extends Component{
     render(){
         return (
-            <Fragment>
+            <div className="myWarp">
                 <div className="myTop">
                     <a href="#/index/home">
                         <i className="fa fa-mail-reply"></i>
@@ -12,14 +12,14 @@ export default class My extends Component{
                     <div className="myBtnWrap"> 
                         <span>个人中心</span> 
                         <p className="myBtn">
-                            <a href="#/mylogin">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                            <a href="#/myregister">注册</a>
+                            <a href="#/mylogin/myLoginLetter">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="#/mylogin/myLoginLetter">注册</a>
                         </p>
                     </div>
                   
                 </div>
                  <MyList />
-            </Fragment>
+            </div>
         )
     }
 }
