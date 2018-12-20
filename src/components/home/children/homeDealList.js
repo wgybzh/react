@@ -15,7 +15,10 @@ export default class HomeDealList extends Component{
                                             <img></img>
                                             <span className="goods_topic_yype"></span>
                                         </div>
-                                        <div className="goods_info"></div>
+                                        <div className="goods_info">
+                                            <div className="title"></div>
+                                            <div className></div>
+                                        </div>
                                     </a>
                         }):"正在加载"
                     }
