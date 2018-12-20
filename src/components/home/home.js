@@ -1,6 +1,6 @@
 
 import React,{Component,Fragment} from "react";
-import {Link} from "react-router-dom"
+//import {Link} from "react-router-dom"
 import {connect} from "react-redux";
 import "./css/style.css"
 import home_header_logo from "../../common/img/homeImg/home_header_img.png"
@@ -33,7 +33,7 @@ import {
 }
 
 const mapStateToProps = (state)=>({
-    homeDealList:state.home. homeDealList
+    homeDealList:state.home.homeDealList
 })
 
 const mapDispatchToProps = (dispatch)=>({

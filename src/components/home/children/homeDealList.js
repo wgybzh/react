@@ -8,9 +8,18 @@ export default class HomeDealList extends Component{
         return(
             <div className="home_deal_box">
                     <div className="home_deal_list">
-                        <a className="home_deal_item">
-                            <img></img>
-                        </a>
+                    {
+                        dealList.length>0?dealList.map((item,index)=>{
+                            return  <a className="home_deal_item" key={index}>
+                                        <div className="goods_img">
+                                            <img></img>
+                                            <span className="goods_topic_yype"></span>
+                                        </div>
+                                        <div className="goods_info"></div>
+                                    </a>
+                        }):"正在加载"
+                    }
+                       
                     </div>
             </div>
         )

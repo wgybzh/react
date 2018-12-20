@@ -133,11 +133,24 @@
 .home_deal_box{
     width: 100%;
     height: auto;
-    overflow: hidden;
     margin-top: .2rem;
 }
 .home_deal_list{
     width: 100%;
-    display: flex;
-    justify-content:space-around;
+    /* display: flex;
+    justify-content:space-sp;
+    flex-wrap: wrap; */
+}
+.home_deal_item{
+    display: block;
+    float: left;
+    margin-left: 0.22rem;
+    width: 3.40rem;
+    margin-bottom: .2rem;
+    border: 2px solid #ccc;
+    box-sizing: content-box;
+}
+.home_deal_item img{
+    width: 100%;
+    height: 100%;
 }
