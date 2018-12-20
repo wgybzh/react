@@ -10,7 +10,12 @@ import HomeSer from "./components/home/homeCon/homeSer"
 import HomeSort from "./components/home/homeCon/homeSort"
 
 import MyLogin from "./components/my/myLogin/myLogin"
+<<<<<<< HEAD
 import MyRegister from "./components/my/myLogin/myRegister"
+=======
+import MyRegister from "./components/my/myRegister/myRegister"
+
+>>>>>>> zhang
 import List from "./components/list/list"
  import store from "./store"
  import {Provider} from 'react-redux'
