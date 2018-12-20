@@ -11,10 +11,6 @@ import HomeSort from "./components/home/homeCon/homeSort"
 
 import MyLogin from "./components/my/myLogin/myLogin"
 import MyRegister from "./components/my/myLogin/myRegister"
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of f4a1752... 登录注册
 import List from "./components/list/list"
  import store from "./store"
  import {Provider} from 'react-redux'
